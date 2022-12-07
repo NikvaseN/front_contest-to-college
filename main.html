@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normolize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+	<link rel="icon" href="./imges/logo.png">
+    <title>Главная</title>
+</head>
+<body>
+	<container class="container">
+	<button id="document-up" onclick="smoothscroll()" class="document-up"><img src="./imges/arrow-up.png" alt="" width="40px" height="40px"></button>
+    <div class="goal">
+		<header class="header">
+			<a class="logo-link" href="#"><img class="logo" src="./imges/logo.png" alt="" width="40px"></a>
+			<div id="menu" class="navbar">
+				<a class="navbar-link" hrev="#">Главная</a>
+				<a class="navbar-link" hrev="#search">Поиск</a>
+				<a class="navbar-link" hrev="#stocks">Акции</a>
+				<a class="navbar-link" hrev="#booking">Управление бронированием</a>
+			</div>
+		</header>
+        <h2 class="goal-text">Наша главная цель – сделать ваш поход удобным, комфортным и безопасным.</h2>
+    </div>
+	<div class="slogan-box"><div class="slogan"><h2>Исполнить мечты просто!</h2></div></div>
+	
+	<div class="feedback-box">
+		<div class="feedback">
+			<img src="./imges/sergey.png" alt="" width="200px" height="200px">
+			<p class="feedback-title">Сергей Лебедев</p>
+			<p class="feedback-text">Это был мой лучший отпуск за долгое время 👍</p>
+		</div>
+		<div class="feedback">
+			<img src="./imges/izzy.png" alt="" width="200px" height="200px">
+			<p class="feedback-title">Изабель Бенсон</p>
+			<p class="feedback-text">Всегда мечтала отдохнуть в горах, и вот моя мечта сбылась 🧡</p>
+		</div>
+		<div class="feedback">
+			<img src="./imges/anton.png" alt="" width="200px" height="200px">
+			<p class="feedback-title">Генри Эванс</p>
+			<p class="feedback-text">Использовал тур с родными, и это были незабываемые воспоминания 👌</p>
+		</div>
+	</div>
+	<div class="search" id="search">
+		<h2>Найти тур</h2>
+			<form action="" class="search-from">
+				<div class="region" id="region">
+					<p><span><img src="./imges/place-white.png" alt="" width="20px"></span>Регион</p>
+					<div id="region-select" class="select">
+						<p id="region-select-text">Россия</p><img id="region-select-img" class="select-img" src="./imges/arrow-small.png" alt="" width="15px" height="15px">
+					</div>
+					<div class="labels">
+						<div class="labels-block" id="region-labels-block"></div>
+						<label id="rus-label" class="select-option" for="rus">Россия</label>
+						<input id="rus" type="radio" name="region-select">
+						<label id="usa-label" class="select-option " for="usa">Америка</label>
+						<input id="usa" type="radio" name="region-select">
+						<label id="sweden-label" class="select-option " for="sweden">Швейцария</label>
+						<input id="sweden" type="radio" name="region-select">
+						<label id="kz-label" class="select-option " for="kz">Казахстан</label>
+						<input id="kz" type="radio" name="region-select">
+					</div>
+				</div>
+				<div class="quantity-people">
+					<p class="quantity-people-title"><span><img src="./imges/people-white.png" alt="" width="20px"></span>Кол-во человек</p>
+					<div class="counter" id="counter">
+						<button type="button" id="counter-minus">-</button>
+						<p id="counter-num">1</p>
+						<button type="button" id="counter-plus">+</button>
+					</div>
+				</div>
+				<div class="skill" id="skill">
+					<p><span><img src="./imges/power-white.png" alt="" width="20px"></span>Уровень подготовки</p>
+					<div id="skill-select" class="select">
+						<p id="skill-select-text">Начинающие</p><img id="skill-select-img" class="select-img" src="./imges/arrow-small.png" alt="" width="15px" height="15px">
+					</div>
+					<div class="labels">
+						<div class="labels-block" id="skill-labels-block"></div>
+						<label class="select-option" for="beginner">Начинающие</label>
+						<input id="beginner" type="radio" name="skill-select">
+						<label class="select-option" for="amateurs">Любители</label>
+						<input id="amateurs" type="radio" name="skill-select">
+						<label class="select-option" for="experienced">Опытные</label>
+						<input id="experienced" type="radio" name="skill-select">
+						<label class="select-option" for="professionals">Профессионалы</label>
+						<input id="professionals" type="radio" name="skill-select">
+					</div>
+				</div>
+				<div class="search-date" id="search-date">
+					<p><span><img src="./imges/date-white.png" alt="" width="20px"></span>Дата</p>
+					<div class="select" id="date-select">
+						<p id="date-select-text">Выбрать</p><img id="date-select-img" class="select-img arrow-right" src="./imges/arrow-small.png" alt="" width="15px" height="15px">
+					</div>
+					<div class="labels">
+						<div class="labels-block" id="date-labels-block"></div>
+						<label class="select-option" for="d11m12y22">11.12.2022</label>
+						<input id="d11m12y22" type="radio" name="date-select">
+						<label class="select-option" for="d18m12y22">18.12.2022</label>
+						<input id="d18m12y22" type="radio" name="date-select">
+						<label class="select-option" for="d25m12y22">25.12.2022</label>
+						<input id="d25m12y22" type="radio" name="date-select">
+						<label class="select-option" for="d01m01y23">01.01.2023</label>
+						<input id="d01m01y23" type="radio" name="date-select">
+					</div>
+				</div>
+				<input type="button" class="search-btn" value="Поиск" onclick="sendSearch()">
+			</form>
+	</div>
+	<div id="booking" class="booking">
+		<div class="infographics">
+			<div class="point"></div>
+			<div class="line"></div>
+			<div class="point"></div>
+			<div class="line"></div>
+			<div class="point"></div>
+			<div class="line"></div>
+			<div class="point"></div>
+			<div class="line"></div>
+			<div class="point"></div>
+			<div class="line"></div>
+			<div class="point"></div>
+			<div class="infographics-block" id="infographics-block"></div>
+		</div>
+		<div class="form">
+			<h2>Забронировать</h2>
+			<form action="" class="form-booking">
+				<div class="form-item">
+					<img src="./imges/pencil.png" alt="" width="20px">
+					<input class="form-input" type="text" id="username" placeholder="ФИО">
+					<hr>
+				</div>
+				<div class="form-item">
+					<img src="./imges/date.png" alt="" width="20px">
+					<input class="form-input" type="text" id="date" placeholder="Дата похода">
+					<hr>
+				</div>
+				<div class="form-item">
+					<img src="./imges/people.png" alt="" width="20px">
+					<input class="form-input" type="text" id="quantity" placeholder="Количество участников">
+					<hr>
+				</div>
+				<div class="form-item">
+					<img src="./imges/place.png" alt="" width="20px">
+					<input class="form-input" type="text" id="region" placeholder="Регион для похода">
+					<hr>
+				</div>
+				<div class="form-item">
+					<img src="./imges/zone.png" alt="" width="20px">
+					<input class="form-input" type="text" id="zone" placeholder="Конкретные зоны">
+					<hr>
+				</div>
+				<div class="form-item">
+					<img src="./imges/service.png" alt="" width="25px">
+					<input class="form-input" type="text" id="service" placeholder="Дополнительные услуги">
+					<hr>
+				</div>
+				<input type="submit" class="btn-form" value="Оформить заказ">
+			</form>
+		</div>
+	</div>
+	<div class="private-stocks">
+		<h2>Закрытые акции</h2>
+		<form action="" >
+			<div class="private-stocks-email">
+				<img src="./imges/email-top.png" alt="" width="20px" height="20px" class="email-top">
+				<img src="./imges/email-bottom.png" alt="" width="20px" height="20px">
+				<div class="private-stocks-input">
+					<input class="search-input" type="text" id="zone" placeholder="Email">
+					<hr>
+				</div>
+			</div>
+			<input type="submit" class="private-stocks-btn">
+		</form>
+	</div>
+	<div class="stocks" id="stocks">
+		<h2>Специльнаые предложения</h2>
+		<div class="stocks-item">
+			<div class="stocks-item-text">
+				<h3>Альпы</h3>
+				<h4>Цена: <span><s style="font-weight:normal ;"> 7000 ₽</s></span> 3000 ₽</h4>
+				<p>Начался горячий тур в швейцарию <br>
+					Посети множество прекрасных гор, рек <br>
+					И атмосферные городки 
+				</p>
+				<button class="stocks-item-btn">Подробнее</button>
+			</div>
+			<img src="./imges/sweden.jpg" alt="" width="60%" height="440px">
+		</div>
+		<div class="stocks-item">
+			<div class="stocks-item-text">
+				<h3>Байкал</h3>
+				<h4>Цена: <span><s style="font-weight:normal ;"> 5000 ₽</s></span> 2500 ₽</h4>
+				<p>Этой прекрасной зимой <br>
+					Вы можете отправится на самое глубокое озеро <br>
+				</p>
+				<button class="stocks-item-btn">Подробнее</button>
+			</div>
+			<img src="./imges/baikal winter.webp" alt="" width="60%" height="440px">
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-contacts">
+			<a href="tel:+78005553310" class="footer-phone footer-link">
+				<img src="./imges/phone.png" alt="" width="20px" height="20px" class="footer-phone-img">
+				<p>8 (800) 555-33-10</p>
+			</a>
+			<a href="mailto:travel@gmail.com" class="footer-email footer-link">
+
+				<img src="./imges/email-top.png" alt="" width="20px" height="20px" class="email-top">
+				<img src="./imges/email-bottom.png" alt="" width="20px" height="20px">
+				<p>travel@gmail.ru</p>
+			</a>
+		</div>
+		<div id="menu" class="navbar">
+			<a class="navbar-link" href="#">Главная</a>
+			<a class="navbar-link" href="#search">Поиск</a>
+			<a class="navbar-link" href="#stocks">Акции</a>
+			<a class="navbar-link" href="#booking">Управление бронированием</a>
+		</div>
+	</footer>
+</container>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>

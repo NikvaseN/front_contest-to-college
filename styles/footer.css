@@ -1,0 +1,97 @@
+.footer{
+	margin-top: 50px;
+	width: 100%;
+	background-color: black;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: calc(100% - 300px);
+    background-color: #0F0F0F;
+    height: 60px;
+    color:white;
+	z-index: 5;
+	padding: 0px 150px;
+}
+.footer-contacts{
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	height: 60%;
+}
+
+.footer-phone{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.footer-email{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.footer-phone-img{
+	transition: .3s;
+}
+.footer-phone:hover .footer-phone-img{
+	animation: phone .5s ease;
+}
+@keyframes phone {
+	0%{
+		transform: rotate(0);
+	}
+	25%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(15deg);
+	}
+	100%{
+		transform: rotate(0);
+	}
+}
+.email-top{
+	position: absolute;
+	transition: .3s;
+}
+
+.footer-link:hover .email-top{
+	margin-top: -7px;
+}
+
+@keyframes email {
+	0%{
+		transform: rotate(0);
+	}
+	25%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(15deg);
+	}
+	100%{
+		transform: rotate(0);
+	}
+}
+
+.footer-link:after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	height: 0px;
+	right: 0;
+	width: 77%;
+	transition: .3s;
+	background-color: #fff;
+}
+.footer-link:hover:after{
+	height: 4px;
+}

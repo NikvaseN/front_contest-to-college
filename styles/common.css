@@ -1,0 +1,23 @@
+
+.container{
+	max-width: 1920px;
+	width: 100%;
+	height: 100vw;
+	position: relative;
+}
+
+.document-up{
+	left: 80px;
+	bottom: 80px;
+	position: fixed;
+	height: 80px;
+	width: 80px;
+	border-radius: 100em;
+	z-index: 99 !important;
+	cursor: pointer;
+	background: none;
+	border: none;
+	display: none;
+	transition: .3s;
+	animation: show-arrow .3s ease;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/tour.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
+	<link rel="icon" href="./imges/logo.png">
+    <title>Поиск</title>
+</head>
+<body>
+	<container class="container">
+	<button id="document-up" onclick="smoothscroll()" class="document-up"><img src="./imges/arrow-up.png" alt="" width="40px" height="40px"></button>
+	<div class="goal">
+		<header class="header">
+			<a class="logo-link" href="./main.html"><img class="logo" src="./imges/logo.png" alt="" width="40px"></a>
+			<div id="menu" class="navbar">
+				<a class="navbar-link" href="./main.html">Главная</a>
+			</div>
+		</header>
+        <h2 class="goal-text">Наша главная цель – сделать ваш поход удобным, комфортным и безопасным.</h2>
+    </div>
+	<h2 class="h2">По вашему запросу нашлось</h2>
+	<div class="tours">
+		<div class="tours-item">
+			<div class="tours-item-text">
+				<h3 id="tour-title">Россия</h3>
+				<h2 id="tour-name"></h2>
+				<p>Сложность: <span id="tour-difficulty">Новички</span></p>
+				<p>Дата: <span id="tour-date">01.01.2000</span></p>
+				<button class="tours-item-btn">Подробнее</button>
+			</div>
+			<img id="tour-img" src="" alt="" width="60%" height="440px">
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-contacts">
+			<a href="tel:+78005553310" class="footer-phone footer-link">
+				<img src="./imges/phone.png" alt="" width="20px" height="20px" class="footer-phone-img">
+				<p>8 (800) 555-33-10</p>
+			</a>
+			<a href="mailto:travel@gmail.com" class="footer-email footer-link">
+
+				<img src="./imges/email-top.png" alt="" width="20px" height="20px" class="email-top">
+				<img src="./imges/email-bottom.png" alt="" width="20px" height="20px">
+				<p>travel@gmail.ru</p>
+			</a>
+		</div>
+		<div id="menu" class="navbar">
+			<a class="navbar-link" href="./main.html">Главная</a>
+			<a class="navbar-link" href="#search">Поиск</a>
+			<a class="navbar-link" href="#stocks">Акции</a>
+			<a class="navbar-link" href="#booking">Управление бронированием</a>
+		</div>
+	</footer>
+	</container>
+	<script src="./scripts/tour.js"></script>
+	<script src="./scripts/index.js"></script>
+</body>
+</html>
